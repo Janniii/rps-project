@@ -1,7 +1,7 @@
 let rpsOptions = ["Rock", "Paper", "Scissors"]
-const playerSelection = "Scissors"
+// const playerSelection = "Scissors"
 //const computerSelection = computerPlay()
-const playerSelectionReal = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase()
+// const playerSelectionReal = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase()
 
 
 
@@ -57,15 +57,27 @@ function game() {
     let computerScore = 0
 
     for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Please choose either 'Rock', 'Paper' or 'Scissors' : ")
+        if (playerSelection == null) {
+            break
+        }
+        let playerSelectionReal = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase()
         let computerSelection = computerPlay()
         let round = playRound(playerSelectionReal, computerSelection)
 
         if (round == 1) {
             playerScore += 1
+            console.log("You win!");
         }
 
         else if (round == 0) {
             computerScore += 1
+            console.log("You lose!");
+        }
+
+
+        else {
+            console.log("Draw!");
         }
 
     }
