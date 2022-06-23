@@ -55,11 +55,13 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     let playerScore = 0
     let computerScore = 0
+    let run = true;
 
-    for (let i = 0; i < 5; i++) {
+    while (run) {
         let playerSelection = prompt("Please choose either 'Rock', 'Paper' or 'Scissors' : ")
         if (playerSelection == null) {
-            break
+            run = false;
+            break;
         }
         let playerSelectionReal = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase()
         let computerSelection = computerPlay()
