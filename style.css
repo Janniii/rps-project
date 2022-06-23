@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(145, 108, 40);
+
+}
+
+
+#realcontainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+#container {
+    display: flex;
+    gap: 100px;
+}
+
+
+button {
+    min-width: 150px;
+    min-height: 150px;
+    background-color: rgb(102, 20, 78);
+    color: gold;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: "Times New Roman", sans-serif;
+    
+
+    
+}
