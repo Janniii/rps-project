@@ -129,7 +129,7 @@ const result = document.createElement("div");
 // result.textContent = "Hello Therffe";
 
 
-result.setAttribute("style", "width: 650px; height: 150px; text-align: center; white-space: pre;")
+result.setAttribute("style", "width: 650px; height: 150px; text-align: center; white-space: pre; font-weight: 500; font-size: 22px;")
 
 parent.setAttribute("style", "align-items: center; gap: 110px; margin-top: 150px")
 
