@@ -3,7 +3,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: rgb(145, 108, 40);
+    background-color: rgb(49, 46, 40);
 
 }
 
@@ -29,7 +29,24 @@ button {
     font-weight: 800;
     font-size: 32px;
     font-family: "Times New Roman", sans-serif;
+    transition: all .07s ease;
     
-
     
 }
+
+
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+
+.pressRematch {
+    transform: scale(1.1);
+    border-color: #209467;
+    box-shadow: 0 0 1rem #209467;
+}
+
+
